@@ -11,7 +11,7 @@ public class Factorial {
 	    	  for(int i=1;i<=n;i++) {
 	    		  output=output*i;
 	    	  }
-	    	  System.out.println(output);
+	    	  
 	      }
 	       else if(n<=-1) {
 	    	  System.out.println("enter a postivie number");

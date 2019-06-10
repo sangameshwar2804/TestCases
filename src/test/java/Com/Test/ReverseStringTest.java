@@ -14,4 +14,23 @@ public void test1() {
 	String actual=rs.checkIsStringReverse("hello");
 	assertEquals(actual, "olleh");
 }
+	@Test
+public void nullTest() {
+	rs=new ReverseString();
+	String actual=rs.checkIsStringReverse("");
+	
+	assertEquals(actual,"");
+}
+@Test
+public void upperCaseTest() {
+	rs=new ReverseString();
+	String actual=rs.checkIsStringReverse("ABC");
+	assertEquals(actual, "cba");
+}
+@Test
+public void mixedCaseTest() {
+	rs=new ReverseString();
+	String actual=rs.checkIsStringReverse("AbCDe");
+	assertEquals(actual, "edcba");
+}
 }

@@ -2,12 +2,17 @@ package Com.BusinessLogic;
 
 public class ReverseString {
 public String checkIsStringReverse(String str) {
-	
+	String str1=str.toLowerCase();
 	String rev="";
-for(int i=str.length();i>0;i--) {
-	rev=rev+str.charAt(i);
-}
-return rev;
+	if(str.equals(null)) {
+		return null;
+	}
+	else {
+		for(int i=str1.length()-1;i>=0;i--) {
+			rev=rev+str1.charAt(i);
+		}
+	}
+	return rev;
 }
 
 }
